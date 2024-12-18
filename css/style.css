@@ -1,0 +1,400 @@
+* {
+  /* Aplica margen "0" a todos los elementos*/
+  margin: 0;
+  /* Aplica padding "0" a todos los elementos*/
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.9rem;
+  color: #282828;
+  background-color: rgb(234, 246, 254);
+}
+
+.container{
+  margin: auto;
+  width: 95%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f3ed;
+}
+
+.menu-bar {
+  display: block;
+}
+
+.bt-menu {
+  display: block;
+  padding: 1.25rem;
+  color: #282828;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.bt-menu span {
+  font-size: 2.5rem;
+}
+
+.ecovivim-logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.search-icon {
+  font-size: 2rem;
+  color: #282828;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.search-icon span {
+  font-size: 1.8rem;
+}
+
+/* Menú hamburguesa desplegable */
+#menu-desplegable {/*cambio el "." por "#" para que los identifique por la ID*/
+  display: block; /* Por defecto, el menú está oculto */
+  position: fixed;
+  top: 0;
+  left: -100%;/**/
+  width: 100%;
+  height: 100%;
+  background-color: #d3dee2; /* Fondo azulito semitransparente */
+  color: #282828;
+  padding-top: 50px;
+}
+#menu-desplegable .x-icon{
+
+
+  margin-left: 12%;
+  color: #282828;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+}
+
+#menu-desplegable ul { /*cambio el "." por "#" para que los identifique por la ID*/
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#menu-desplegable ul li { /*cambio el "." por "#" para que los identifique por la ID*/
+  margin: 20px 0;
+}
+
+#menu-desplegable ul li a { /*cambio el "." por "#" para que los identifique por la ID*/
+  color: #282828;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Mostrar el menú cuando se haga clic en el ícono hamburguesa */
+.menu-bar.active + .menu-desplegable {
+  display: block;
+}
+
+
+/*Logo*/
+img{
+  width: 85%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: #f7f3ed;
+  color: #282828;
+  text-align: center;
+  padding: 0 20px;
+  height: 10vh;
+  }
+
+.footer-lista {
+  display: flex;
+  /*Over-flow scroll para que cuando el contenido sobrepase, se pueda desplazar*/
+  overflow: scroll;
+  /*Oculatar la barra vertical*/
+  overflow-y: hidden;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  /*Le damos relacionada a la del footer*/
+  height:100%;
+}
+
+.footer-lista a {
+  color: #282828;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-lista a:hover {
+  color: rgb(22, 131, 73);
+}
+/*INICIO:Personalizar barra de navegación horizotal*/
+.footer-lista::-webkit-scrollbar{
+  /* height: .6rem; */
+  height: 0.9vh;
+}
+.footer-lista::-webkit-scrollbar-track{
+  background:transparent;
+}.footer-lista::-webkit-scrollbar-thumb{
+  background: #ac997b;
+  border-radius: .5rem;
+}
+/*FIN:Personalizar barra de navegación horizotal*/
+
+
+/*Estilos de cada página*/
+.cuadro-texto{
+  background-color: rgb(229, 239, 209);
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Nosotros */
+.cuadro-texto-nosotros{
+  background-color: rgb(229, 239, 209);
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 40px;
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+/* Ubicación */
+.mapa{
+  width: 85%; 
+  max-width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden; /* Asegura que el mapa no sobresalga del contenedor */
+  margin-bottom: 20px;
+}
+
+.cuadro-texto-mapa{
+  background-color: rgb(229, 239, 209);
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 20px;
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+/* Formulario de contacto */
+.cuadro-texto-formulario{
+  background-color: rgb(229, 239, 209);
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 225px;
+  padding-bottom: 30px;
+}
+
+.contacto-nombre{
+  border: solid 1.5px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.contacto-telefono{
+  border: solid 1.5px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.contacto-correo{
+  border: solid 1.5px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.contacto-comentario{
+  border: solid 1.5px;
+  margin: 15px;
+  padding: 5px;
+  padding-bottom: 60px;
+}
+
+.boton-enviar{
+  background-color: rgb(153, 190, 153);
+  margin: 15px;
+  padding:5px 
+}
+
+
+
+/* REEEVIIIIIISAAAAAR NO EENTIIEENDOOOO ABSOLUTAMENTE NAADAAAAA, JODEEEEEEEEEER */ /* Revisar solo diseñadores*/
+/* Diseñadores */
+/* Diseñadores flex */
+
+/* Contenedor principal de los diseñadores (cerca de la imagen y texto) */
+.diseñadores-flex-1,
+.diseñadores-flex-2,
+.diseñadores-flex-3 {
+  display: flex; /* Usamos flexbox para que imagen y texto estén alineados */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila si es necesario */
+  align-items: flex-start; /* Alinea el contenido al principio */
+  gap: 20px; /* Espacio entre imagen y texto */
+  margin-top: 30px;
+}
+
+/* Imagen con tamaño ajustado */
+/* Contenedor principal de los diseñadores (flex con imagen a la izquierda y texto a la derecha) */
+.diseñadores-flex-1,
+.diseñadores-flex-2,
+.diseñadores-flex-3 {
+  display: flex;          /* Usamos flexbox para alinear imagen y texto horizontalmente */
+  gap: 20px;              /* Espacio entre la imagen y el texto */
+  align-items: flex-start; /* Alinea los elementos al principio */
+  margin-top: 30px;
+  margin-bottom: 20px;     /* Separación entre bloques */
+}
+
+/* Imagen a la izquierda con tamaño ajustado */
+.img-diseñador-1,
+.img-diseñador-2,
+.img-diseñador-3 {
+  width: 100%; 
+  height: auto;    /* Mantiene la proporción de la imagen */
+  max-width: 200px; /* Limita el tamaño máximo de la imagen */
+  margin-bottom: 10px; /* Espacio inferior para que no se pegue al texto */
+}
+
+/* Estilo para el texto que rodea a la imagen */
+.texto-diseñador-1,
+.texto-diseñador-2,
+.texto-diseñador-3 {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #282828;
+  display: flex;
+  flex-direction: column;  /* Coloca el texto de manera vertical */
+  justify-content: flex-start; /* Asegura que el texto se alinee al principio */
+}
+
+/*Estilo de los bloques imagen + texo */
+.diseñadores-flex-1,
+.diseñadores-flex-2,
+.diseñadores-flex-3 {
+  background-color: rgb(229, 239, 209);  /* Color de fondo para cada bloque */
+  padding: 15px;
+}
+
+
+
+/* Descuentos */
+.cuadro-texto-descuentos{
+  background-color: rgb(229, 239, 209);
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 225px;
+  padding-bottom: 30px;
+}
+
+.codigo-descuento{
+  border: solid 1.5px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.texto-descuento{
+  margin: 15px;
+  padding: 5px;
+}
+
+/*ROPA DE MUJER*/
+/* Contenedor principal */
+.container-ropa {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas filas */
+  gap: 20px;       /* Espacio entre las imágenes */
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+}
+
+/* Cada producto */
+.product {
+  width: calc(50% - 10px); /* Ocupa el 50% del contenedor, menos el espacio entre ellos */
+  box-sizing: border-box;  /* Asegura que los márgenes y padding estén incluidos en el tamaño */
+  text-align: center;      /* Centra el contenido dentro de cada producto */
+}
+
+/* Estilo para las imágenes */
+.product img {
+  width: 100%;   /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+  height: auto;  /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Estilos del contenedor del carrusel */
+.carrusel-product {
+  display: flex;
+  width: 100%; /* El contenedor ocupa el 100% del ancho */
+  overflow: hidden;  /* Oculta las imágenes fuera del contenedor */
+  position: relative;
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.carrusel-product img {
+  width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+  transition: transform 0.5s ease-in-out; /* Transición suave al mover las imágenes */
+}
+
+/* Estilos para el contenedor de los botones de navegación */
+.carrusel-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+/* Estilos para los botones */
+.carrusel-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
